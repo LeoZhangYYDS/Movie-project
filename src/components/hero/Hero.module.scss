@@ -1,0 +1,35 @@
+.main {
+  background: no-repeat scroll center 20% / cover;
+  height: 50vh;
+  width: 80vw;
+  .cover {
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(43, 56, 133, 0.466);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  h1 {
+    margin: 0.5rem 3rem;
+  }
+  h4 {
+    margin: 0.5rem 3rem;
+  }
+  .input {
+    margin: 1rem 3rem;
+
+    input {
+      width: 40%;
+      height: 2.5rem;
+      border-radius: 2rem 0rem 0rem 2rem;
+      padding: 0rem 1.5rem;
+      font-size: 1rem;
+    }
+    button {
+      height: 2.5rem;
+      border-radius: 0rem 5rem 5rem 0rem;
+    }
+  }
+}
