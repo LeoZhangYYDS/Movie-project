@@ -3,3 +3,8 @@
 
 // base imports
 @use "./base/base";
+
+//pages
+@use "./pages/about";
+@use "./pages/contact";
+@use "./pages/privacy";

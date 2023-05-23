@@ -1,29 +1,28 @@
 import MovieList from "@/components/movieList/MovieList";
 import Hero from "@/components/hero/Hero.jsx";
 import { Fragment } from "react";
-const PopularMovie = (props) => {
-  const { results } = props;
 
+const Toprated = (props) => {
+  const { results } = props;
   return (
     <Fragment>
-      <Hero bgImage="/images/heroImage1.jpg" />
+      <Hero bgImage="/images/heroImage6.jpg" />
       <MovieList results={results} />
     </Fragment>
   );
 };
-
 export const getServerSideProps = async () => {
   const response = await fetch(
-    `https://api.themoviedb.org/3/movie/popular?language=en-US&page=1&api_key=${process.env.MOVIE_API_KEY}`
+    `https://api.themoviedb.org/3/tv/top_rated?language=en-US&page=1&api_key=${process.env.MOVIE_API_KEY}`
   );
   const data = await response.json();
-  const popularMovies = data.results;
+  const topRated = data.results;
 
   return {
     props: {
-      results: popularMovies,
+      results: topRated,
     },
   };
 };
 
-export default PopularMovie;
+export default Toprated;

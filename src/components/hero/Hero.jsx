@@ -1,7 +1,9 @@
 import styles from "./Hero.module.scss";
 import Button from "../ui/Button";
+
 const Hero = (props) => {
   const { bgImage } = props;
+
   return (
     <div className={styles.main} style={{ backgroundImage: `url(${bgImage})` }}>
       <div className={styles.cover}>

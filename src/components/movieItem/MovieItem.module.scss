@@ -1,0 +1,11 @@
+.image {
+  height: 22rem;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  .cardTitle {
+    height: 3rem;
+  }
+}

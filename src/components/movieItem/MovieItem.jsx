@@ -1,12 +1,56 @@
-const MovieItem = (props) => {
-  const { title, rate } = props;
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import React, { useState } from "react";
+import styles from "./MovieItem.module.scss";
+import MyVerticallyCenteredModal from "../modal/CenteredModal";
+
+function MovieItem(props) {
+  const {
+    title,
+    rate,
+    poster_path,
+    name,
+    release_date,
+    first_air_date,
+    overview,
+  } = props;
+  const [modalShow, setModalShow] = useState(false);
+  const image = `https://image.tmdb.org/t/p/w200${poster_path}`;
 
   return (
-    <div>
-      <h1>{title}</h1>
-      <h1>{rate}</h1>
-    </div>
+    <Card style={{ width: "16rem" }}>
+      <Card.Img
+        variant="top"
+        src={image}
+        className={styles.image}
+        alt={title}
+      />
+      <Card.Body className={styles.cardBody}>
+        <Card.Title className={styles.cardTitle}>
+          {title ? title : name}
+        </Card.Title>
+        <Card.Text>Rate: {rate}</Card.Text>
+        <Button
+          variant="primary"
+          className="left"
+          onClick={() => setModalShow(true)}
+        >
+          More Info
+        </Button>
+        {/* passing data to child */}
+        <MyVerticallyCenteredModal
+          show={modalShow}
+          image={image}
+          title={title}
+          name={name}
+          release_date={release_date}
+          first_air_date={first_air_date}
+          overview={overview}
+          onHide={() => setModalShow(false)}
+        />
+      </Card.Body>
+    </Card>
   );
-};
+}
 
 export default MovieItem;

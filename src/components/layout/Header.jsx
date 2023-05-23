@@ -19,14 +19,21 @@ function NavScrollExample() {
           >
             <NavDropdown title="Movies" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/movies">Popular</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Up Coming</NavDropdown.Item>
-              <NavDropdown.Item href="#action5">Top Rated</NavDropdown.Item>
+              <NavDropdown.Item href="/movies/upcoming">
+                Up Coming
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/movies/toprated">
+                Top Rated
+              </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="TV Shows" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action2">All Shows</NavDropdown.Item>
-              <NavDropdown.Item href="#action3">Popular</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Airing Today</NavDropdown.Item>
-              <NavDropdown.Item href="#action5">Top Rated</NavDropdown.Item>
+              <NavDropdown.Item href="/tvshows">Popular</NavDropdown.Item>
+              <NavDropdown.Item href="/tvshows/airingtoday">
+                Airing Today
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/tvshows/toprated">
+                Top Rated
+              </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#action1">Login</Nav.Link>
             <Nav.Link href="#action2">Register</Nav.Link>
