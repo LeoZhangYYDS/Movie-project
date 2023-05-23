@@ -2,7 +2,7 @@
   background: no-repeat scroll center 20% / cover;
   height: 50vh;
   display: flex;
-  width: 100vw;
+  width: 100%;
 
   .cover {
     color: white;
@@ -15,10 +15,13 @@
     align-items: center;
   }
   h1 {
+    text-align: center;
+    width: 99vw;
     margin: 0.5rem;
   }
   h4 {
     margin: 0.5rem;
+    text-align: center;
   }
   .input {
     margin: 1rem;

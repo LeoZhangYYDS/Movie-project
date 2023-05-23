@@ -13,10 +13,11 @@ function NavScrollExample() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
-            className="me-auto my-2 my-lg-0"
+            className={`me-auto my-2 my-lg-0 ${styles.grid}`}
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
+            <div></div>
             <NavDropdown title="Movies" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/movies">Popular</NavDropdown.Item>
               <NavDropdown.Item href="/movies/upcoming">
@@ -35,8 +36,10 @@ function NavScrollExample() {
                 Top Rated
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#action1">Login</Nav.Link>
-            <Nav.Link href="#action2">Register</Nav.Link>
+            <div></div>
+
+            <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link href="/register">Register</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
