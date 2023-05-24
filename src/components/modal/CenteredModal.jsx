@@ -5,7 +5,6 @@ import Image from "next/image";
 //react bootstrap modal
 function MyVerticallyCenteredModal(props) {
   const { title, name, image, release_date, first_air_date, overview } = props;
-  //console.log(image);
   return (
     <Modal
       {...props}
@@ -18,10 +17,15 @@ function MyVerticallyCenteredModal(props) {
           {title ? title : name}
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body>
-        <div className={styles.box}>
-          <Image scr={image} alt={title ? title : name} />
-          <p>Release Date: {release_date ? release_date : first_air_date}</p>
+      <Modal.Body className={styles.box}>
+        <div>
+          <Image
+            src={image}
+            width={250}
+            height={350}
+            alt={title ? title : name}
+          />
+          <h6>Release Date: {release_date ? release_date : first_air_date}</h6>
         </div>
         <p>Overview: {overview}</p>
       </Modal.Body>
