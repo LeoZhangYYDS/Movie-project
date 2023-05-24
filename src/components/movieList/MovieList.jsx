@@ -1,5 +1,4 @@
 import MovieItem from "../movieItem/MovieItem";
-import Hero from "../hero/Hero";
 import styles from "./MovieList.module.scss";
 const MovieList = (props) => {
   const { results } = props;

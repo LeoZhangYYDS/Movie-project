@@ -17,13 +17,13 @@ function MovieItem(props) {
   const image = `https://image.tmdb.org/t/p/w200${poster_path}`;
 
   return (
-    <div class="card" style={{ width: "16rem" }}>
+    <div className="card" style={{ width: "16rem" }}>
       <Image
-        src={image}
+        src={image ? image : ""}
         className={styles.image}
-        alt={title}
+        alt={title ? title : name}
         width={255}
-        height={300}
+        height={350}
       />
       <div className={styles.cardBody}>
         <h5 className={styles.cardTitle}> {title ? title : name}</h5>
@@ -31,7 +31,7 @@ function MovieItem(props) {
 
         <button
           type="button"
-          class="btn btn-primary"
+          className="btn btn-primary"
           data-bs-toggle="modal"
           data-bs-target="#staticBackdrop"
           onClick={() => setModalShow(true)}

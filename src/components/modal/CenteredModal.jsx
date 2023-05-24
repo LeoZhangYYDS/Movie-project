@@ -20,7 +20,7 @@ function MyVerticallyCenteredModal(props) {
       <Modal.Body className={styles.box}>
         <div>
           <Image
-            src={image}
+            src={image ? image : ""}
             width={250}
             height={350}
             alt={title ? title : name}
