@@ -8,10 +8,10 @@ const about = () => {
         providing you with the latest updates, news, trailers, and more.
       </p>
       <p>
-        Whether you're a die-hard movie enthusiast or just looking for something
-        to watch on a Friday night, our website is here to cater to your
-        cinematic needs. We cover a wide range of genres, from action and
-        adventure to romance and sci-fi, ensuring there's something for
+        Whether you are a die-hard movie enthusiast or just looking for
+        something to watch on a Friday night, our website is here to cater to
+        your cinematic needs. We cover a wide range of genres, from action and
+        adventure to romance and sci-fi, ensuring there is something for
         everyone.
       </p>
       <p>
