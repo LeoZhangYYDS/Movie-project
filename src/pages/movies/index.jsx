@@ -12,7 +12,7 @@ const PopularMovie = (props) => {
   );
 };
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const response = await fetch(
     `https://api.themoviedb.org/3/movie/popular?language=en-US&page=1&api_key=${process.env.MOVIE_API_KEY}`
   );
@@ -23,6 +23,7 @@ export const getServerSideProps = async () => {
     props: {
       results: popularMovies,
     },
+    revalidate: 600,
   };
 };
 

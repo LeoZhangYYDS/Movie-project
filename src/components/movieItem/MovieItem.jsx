@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "./MovieItem.module.scss";
 import MyVerticallyCenteredModal from "../modal/CenteredModal";
 

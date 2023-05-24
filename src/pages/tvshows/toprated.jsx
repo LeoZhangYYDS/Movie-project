@@ -11,7 +11,7 @@ const Toprated = (props) => {
     </Fragment>
   );
 };
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const response = await fetch(
     `https://api.themoviedb.org/3/tv/top_rated?language=en-US&page=1&api_key=${process.env.MOVIE_API_KEY}`
   );
@@ -22,6 +22,7 @@ export const getServerSideProps = async () => {
     props: {
       results: topRated,
     },
+    revalidate: 600,
   };
 };
 
