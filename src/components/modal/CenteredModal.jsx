@@ -5,7 +5,7 @@ import Image from "next/image";
 //react bootstrap modal
 function MyVerticallyCenteredModal(props) {
   const { title, name, image, release_date, first_air_date, overview } = props;
-  console.log(image);
+  //console.log(image);
   return (
     <Modal
       {...props}

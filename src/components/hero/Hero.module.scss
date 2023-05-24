@@ -2,12 +2,15 @@
   background: no-repeat scroll center 20% / cover;
   height: 50vh;
   display: flex;
-  width: 100%;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
 
   .cover {
     color: white;
-    height: 100%;
-    width: 100%;
+    height: 50vh;
+    width: 100vw;
     background-color: rgba(43, 56, 133, 0.466);
     display: flex;
     flex-direction: column;
@@ -16,7 +19,7 @@
   }
   h1 {
     text-align: center;
-    width: 99vw;
+
     margin: 0.5rem;
   }
   h4 {
