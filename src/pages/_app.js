@@ -11,14 +11,14 @@ export default function App({ Component, pageProps }) {
         strategy="afterInteractive"
       />
       <Script id="google-analytics-script" strategy="afterInteractive">
-        {` window.dataLayer = window.dataLayer || [];
-           function gtag(){dataLayer.push(arguments);}
-           tag('js', new Date());
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-           gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+          gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
         `}
       </Script>
-
       <Layout>
         <Component {...pageProps} />
       </Layout>
