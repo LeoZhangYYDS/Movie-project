@@ -1,6 +1,6 @@
 import { AiFillFacebook } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
-
+import Link from "next/link";
 const contact = () => {
   return (
     <div className="contact">
@@ -11,12 +11,12 @@ const contact = () => {
         <p>Address: 123 Movie Street, City, Country</p>
       </div>
       <div className="bottom">
-        <a href="https://www.facebook.com/" target="blank">
+        <Link href="https://www.facebook.com/" target="blank">
           <AiFillFacebook className="icon" />
-        </a>
-        <a href="https://www.instagram.com/" target="blank">
+        </Link>
+        <Link href="https://www.instagram.com/" target="blank">
           <AiOutlineInstagram className="icon" />
-        </a>
+        </Link>
       </div>
     </div>
   );
