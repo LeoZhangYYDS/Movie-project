@@ -1,4 +1,4 @@
-import styles from "./bootstrap.module.scss";
+import styles from "./Header2.module.scss";
 import Link from "next/link";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -13,7 +13,7 @@ const Bootstrap = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className={`me-auto ${styles.nav}`}>
+          <Nav className="me-auto">
             <div></div>
             <Nav.Link as={Link} href="/">
               Home

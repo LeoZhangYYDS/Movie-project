@@ -1,12 +1,12 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import styles from "./Layout.module.scss";
-import Bootstrap from "./bootstrap";
+import Header2 from "./Header2";
 const Layout = (props) => {
   return (
     <div className={styles.flex}>
-      <Bootstrap />
-      {/* <Header /> */}
+      {/* <Header2 /> */}
+      <Header />
       <main className={styles.main}>{props.children}</main>
       <Footer />
     </div>
