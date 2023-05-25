@@ -3,6 +3,7 @@ import MovieList from "@/components/movieList/MovieList";
 import { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import Head from "next/head";
+import BackToTop from "@/components/ui/BackToTop";
 export default function Home() {
   const [query, setQuery] = useState("walking dead");
   const [results, setResults] = useState([]);
@@ -38,6 +39,7 @@ export default function Home() {
           onChange={onChange}
         />
         <MovieList results={results} />
+        {/* <BackToTop /> */}
       </div>
     </Fragment>
   );

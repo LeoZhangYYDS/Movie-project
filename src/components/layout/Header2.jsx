@@ -6,13 +6,13 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 const Header2 = () => {
   return (
-    <Navbar bg="dark" expand="lg" variant="dark" className={styles.header}>
+    <Navbar bg="dark" expand="md" variant="dark" className={styles.header}>
       <Container>
         <Navbar.Brand as={Link} href="/" className={styles.logo}>
           Home Theater
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className={styles.flex}>
           <Nav className={`me-auto ${styles.nav}`}>
             <div></div>
             <Nav.Link as={Link} href="/">
