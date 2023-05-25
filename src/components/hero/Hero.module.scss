@@ -43,3 +43,16 @@
     }
   }
 }
+@media screen and (max-width: 450px) {
+  .main {
+    .input {
+      input {
+        width: 15rem;
+        height: 2rem;
+      }
+      button {
+        height: 2rem;
+      }
+    }
+  }
+}
