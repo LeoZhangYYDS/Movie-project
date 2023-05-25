@@ -10,7 +10,7 @@ export default function Home() {
     async function getData() {
       try {
         const res = await axios.get(
-          `https://api.themoviedb.org/3/search/multi?query=${query}&include_adult=false&language=en-US&page=1&api_key=36569278a9a0fc43b8198f3f7e34ccf9`
+          `https://api.themoviedb.org/3/search/multi?query=${query}&include_adult=false&language=en-US&page=1&api_key=${process.env.NEXT_PUBLIC_MOVIE_API_KEY}`
         );
         setResults(res.data.results);
         console.log(res.data.results);
