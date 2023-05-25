@@ -1,17 +1,57 @@
+.card {
+  width: 16rem;
+}
 .cardBody {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   h5 {
+    font-size: 1.05rem;
     margin: 0.5rem 1rem;
+    overflow: hidden;
+    text-align: center;
   }
   p {
+    text-align: center;
     margin: 0.5rem 1rem;
   }
   button {
+    width: 15rem;
     margin: 0.5rem 1rem;
   }
 
   .cardTitle {
     height: 2.5rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .card {
+    width: 10rem;
+    height: 19rem;
+
+    .image {
+      width: 10rem;
+      height: 14rem;
+    }
+    .cardBody {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h5 {
+        font-size: 0.9rem;
+        margin: 0;
+        text-align: center;
+      }
+      p {
+        display: none;
+      }
+      button {
+        font-size: 0.8rem;
+        width: 5.5rem;
+        height: 2rem;
+        margin: 0;
+      }
+    }
   }
 }

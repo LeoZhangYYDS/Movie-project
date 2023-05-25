@@ -17,7 +17,7 @@ function MovieItem(props) {
   const image = `https://image.tmdb.org/t/p/w200${poster_path}`;
 
   return (
-    <div className="card" style={{ width: "16rem" }}>
+    <div className={`card ${styles.card}`}>
       <Image
         src={image ? image : ""}
         className={styles.image}

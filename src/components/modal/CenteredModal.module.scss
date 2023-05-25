@@ -7,3 +7,29 @@
     margin: 0rem 2.5rem;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .box {
+    height: 20rem;
+    h6 {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+    .image {
+      width: 10rem;
+      height: 15rem;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .box {
+    p {
+      overflow: scroll;
+      font-size: 0.9rem;
+    }
+  }
+}
