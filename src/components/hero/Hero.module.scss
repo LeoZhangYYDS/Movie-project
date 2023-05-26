@@ -29,17 +29,19 @@
   }
   .input {
     margin: 1rem;
+    display: flex;
 
     input {
       width: 20rem;
       height: 2.5rem;
       border-radius: 2rem 0rem 0rem 2rem;
       padding: 0rem 1.5rem;
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
     button {
       height: 2.5rem;
       border-radius: 0rem 5rem 5rem 0rem;
+      font-size: 0.9rem;
     }
   }
 }

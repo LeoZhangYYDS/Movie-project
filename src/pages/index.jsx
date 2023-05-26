@@ -7,6 +7,7 @@ import BackToTop from "@/components/ui/BackToTop";
 export default function Home() {
   const [query, setQuery] = useState("walking dead");
   const [results, setResults] = useState([]);
+
   useEffect(() => {
     //api call , search query changes based on user input.
     async function getData() {

@@ -17,7 +17,7 @@ const Hero = (props) => {
   return (
     <div className={styles.main} style={{ backgroundImage: `url(${bgImage})` }}>
       <div className={styles.cover}>
-        <h1>Welcome.</h1>
+        <h1>Welcome</h1>
         <h4>Millions of movies and TV shows. Explore now.</h4>
         {/* if show = false , do not render input and button  */}
         {show && (
@@ -25,7 +25,7 @@ const Hero = (props) => {
             <input
               type="text"
               onChange={handleChange}
-              placeholder="Search for Movies,TV Shows..."
+              placeholder="Search for Movies, TV Shows..."
             />
             <Button onClick={handleClick}>Search</Button>
           </div>
