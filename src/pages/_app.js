@@ -1,11 +1,11 @@
 import Layout from "@/components/layout/Layout";
 import "../scss/main.scss";
-import { Fragment } from "react";
 import Script from "next/script";
+import SSRProvider from "react-bootstrap/SSRProvider";
 
 export default function App({ Component, pageProps }) {
   return (
-    <Fragment>
+    <SSRProvider>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
         strategy="afterInteractive"
@@ -19,9 +19,10 @@ export default function App({ Component, pageProps }) {
           gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
         `}
       </Script>
+
       <Layout>
         <Component {...pageProps} />
       </Layout>
-    </Fragment>
+    </SSRProvider>
   );
 }

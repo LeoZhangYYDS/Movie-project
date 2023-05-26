@@ -1,12 +1,18 @@
-import styles from "./Header2.module.scss";
+import styles from "./HeaderTwo.module.scss";
 import Link from "next/link";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-const Header2 = () => {
+const HeaderTwo = () => {
   return (
-    <Navbar bg="dark" expand="md" variant="dark" className={styles.header}>
+    <Navbar
+      bg="dark"
+      expand="md"
+      variant="dark"
+      className={styles.header}
+      fixed="top"
+    >
       <Container>
         <Navbar.Brand as={Link} href="/" className={styles.logo}>
           Home Theater
@@ -58,4 +64,4 @@ const Header2 = () => {
   );
 };
 
-export default Header2;
+export default HeaderTwo;

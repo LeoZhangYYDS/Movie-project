@@ -1,11 +1,11 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import styles from "./Layout.module.scss";
-import Header2 from "./Header2";
+import HeaderTwo from "./HeaderTwo";
 const Layout = (props) => {
   return (
     <div className={styles.flex}>
-      <Header2 />
+      <HeaderTwo />
       {/* <Header /> */}
       <main className={styles.main}>{props.children}</main>
       <Footer />
