@@ -5,9 +5,11 @@ import { useState } from "react";
 const Hero = (props) => {
   const { bgImage, onChange, show = false } = props;
   const [input, setInput] = useState("");
+  //set input to user input
   function handleChange(e) {
     setInput(e.target.value);
   }
+  //when click the button pass user input value to onChange,so the parent can get the value
   const handleClick = () => {
     onChange(input);
   };
@@ -17,6 +19,7 @@ const Hero = (props) => {
       <div className={styles.cover}>
         <h1>Welcome.</h1>
         <h4>Millions of movies and TV shows. Explore now.</h4>
+        {/* if show = false , do not render input and button  */}
         {show && (
           <div className={styles.input}>
             <input

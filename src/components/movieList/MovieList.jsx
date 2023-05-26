@@ -5,6 +5,7 @@ const MovieList = (props) => {
 
   return (
     <div className={styles.grid}>
+      {/* map out results and pass to child */}
       {results.map((result) => (
         <MovieItem
           key={result.id}

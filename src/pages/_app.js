@@ -6,6 +6,7 @@ import SSRProvider from "react-bootstrap/SSRProvider";
 export default function App({ Component, pageProps }) {
   return (
     <SSRProvider>
+      {/* google anlytics script */}
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
         strategy="afterInteractive"
