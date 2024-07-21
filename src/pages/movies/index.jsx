@@ -25,6 +25,7 @@ export const getStaticProps = async () => {
   );
   const data = await response.json();
   const popularMovies = data.results;
+  console.log(data.results);
 
   return {
     props: {

@@ -4,6 +4,7 @@ import { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import Head from "next/head";
 import BackToTop from "@/components/ui/BackToTop";
+
 export default function Home() {
   const [query, setQuery] = useState("walking dead");
   const [results, setResults] = useState([]);
@@ -17,7 +18,8 @@ export default function Home() {
         );
         // set results to api data array
         setResults(res.data.results);
-        // console.log(res.data.results);
+
+        console.log(res.data.results);
       } catch (err) {
         console.log(err);
       }
